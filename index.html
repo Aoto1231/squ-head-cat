@@ -1,81 +1,68 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Squ Head Cat - A premium gallery showcasing adorable feline moments">
-    <title>Squ Head Cat - Gallery</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Squ Head Cat">
+    <title>Squ Head Cat</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+
+        .image-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 4px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .image-container {
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <div class="background-gradient"></div>
-    
-    <header class="header">
-        <div class="header-content">
-            <h1 class="logo">Squ Head Cat</h1>
-            <nav class="nav">
-                <a href="#gallery" class="nav-link">Gallery</a>
-                <a href="#about" class="nav-link">About</a>
-            </nav>
-        </div>
-    </header>
-
-    <main class="main-content">
-        <section id="gallery" class="gallery-section">
-            <div class="section-header">
-                <h2 class="section-title">Featured</h2>
-                <p class="section-subtitle">Capturing precious moments</p>
-            </div>
-            
-            <div class="image-container">
-                <div class="image-wrapper">
-                    <img src="squ-head-cat.jpg" alt="Squ Head Cat" class="main-image" id="mainImage">
-                    <div class="image-overlay">
-                        <button class="zoom-button" id="zoomButton" aria-label="Toggle fullscreen">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7"/>
-                            </svg>
-                        </button>
-                    </div>
-                </div>
-                <div class="image-caption">
-                    <h3 class="caption-title">Squ Head Cat</h3>
-                    <p class="caption-description">A moment of pure feline grace and charm</p>
-                </div>
-            </div>
-        </section>
-
-        <section id="about" class="about-section">
-            <div class="about-content">
-                <h2 class="about-title">About This Gallery</h2>
-                <p class="about-text">
-                    Welcome to our curated collection featuring the adorable Squ Head Cat. 
-                    This gallery celebrates the unique charm and personality of our feline friend.
-                </p>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">&copy; 2026 Squ Head Cat Gallery. Crafted with ❤️</p>
-        </div>
-    </footer>
-
-    <!-- Fullscreen Modal -->
-    <div class="fullscreen-modal" id="fullscreenModal">
-        <button class="close-button" id="closeButton" aria-label="Close fullscreen">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </button>
-        <img src="squ-head-cat.jpg" alt="Squ Head Cat Fullscreen" class="fullscreen-image">
+    <h1>Squ Head Cat</h1>
+    <div class="image-container">
+        <img src="squ-head-cat.jpg" alt="Squ Head Cat">
     </div>
-
-    <script src="script.js"></script>
 </body>
+
 </html>
