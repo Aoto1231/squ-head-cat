@@ -1,0 +1,3 @@
+name = "squ-head-cat"
+compatibility_date = "2026-01-25"
+pages_build_output_dir = "./"  # HTMLファイルが置いてある場所（必要に応じて変更）
