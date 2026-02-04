@@ -5,3 +5,9 @@
 ## 📁 ファイル構成
 
 **シンプルイズベスト！** 😊
+
+① 最新状態を取る
+git pull origin main
+
+② 作業用ブランチを作る
+git checkout -b feature-login
